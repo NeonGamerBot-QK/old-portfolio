@@ -1,0 +1,80 @@
+{
+  "name": "sd-portfolio",
+  "version": "0.0.3",
+  "private": true,
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.0.2",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.1",
+    "@react-pdf/renderer": "^2.2.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@tinymce/tinymce-react": "^4.3.0",
+    "@uiw/codemirror-theme-github": "^4.11.6",
+    "@uiw/react-codemirror": "^4.11.6",
+    "ackee-tracker": "^5.1.0",
+    "analytics": "^0.8.1",
+    "axios": "^0.26.1",
+    "bootstrap": "^5.1.3",
+    "chart.js": "^3.9.1",
+    "daisyui": "^3.5.1",
+    "dotenv": "^16.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.2.1",
+    "react-chartjs-2": "^4.3.1",
+    "react-dat-gui": "^4.1.1",
+    "react-dom": "^17.0.2",
+    "react-github-calendar": "^3.2.2",
+    "react-icons": "^4.3.1",
+    "react-parallax-tilt": "^1.7.42",
+    "react-pdf": "^5.7.1",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "react-tsparticles": "^1.42.2",
+    "react-use-measure": "^2.1.1",
+    "socket.io-client": "^4.5.1",
+    "tsparticles-preset-bubbles": "^2.9.3",
+    "tsparticles-preset-fire": "^2.9.3",
+    "tsparticles-preset-triangles": "^2.9.3",
+    "typewriter-effect": "^2.18.2",
+    "use-ackee": "3.0.1",
+    "use-analytics": "^0.0.5",
+    "web-vitals": "^2.1.4",
+    "zip-cli": "^0.0.0"
+  },
+  "resolutions": {
+    "autoprefixer": "10.4.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "package": "zip-cli -i build -o build.zip"
+  },
+  "lint-staged": {
+    "**/*": "npx prettier --write --ignore-unknown"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
+  }
+}
