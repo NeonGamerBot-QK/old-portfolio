@@ -1,7 +1,7 @@
-import React from "react";
-import config from "../config/config.json";
-import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub } from "react-icons/ai";
+import React from 'react'
+import config from '../config/config.json'
+import { Container, Row, Col } from 'react-bootstrap'
+import { AiFillGithub } from 'react-icons/ai'
 // import { FaLinkedinIn } from "react-icons/fa";
 
 /**
@@ -28,26 +28,26 @@ import { AiFillGithub } from "react-icons/ai";
  *           &lt;Col md
  * @returns A React component.
  */
-function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+function Footer () {
+  let date = new Date()
+  let year = date.getFullYear()
   return (
-    <Container fluid className="my-footer">
+    <Container fluid className='my-footer'>
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by <span style={{ color: "#123524"}}>{config.name}</span> </h3>
+        <Col md='4' className='footer-copywright'>
+          <h3>Designed and Developed by <span style={{ color: '#123524'}}>{config.name}</span> </h3>
         </Col>
-        <Col md="4" className="footer-copywright">
+        <Col md='4' className='footer-copywright'>
           <h3>Copyright © {year} SD</h3>
         </Col>
-        <Col md="4" className="my-footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
+        <Col md='4' className='my-footer-body'>
+          <ul className='footer-icons'>
+            <li className='social-icons'>
               <a
-                href={"https://github.com/" + config.github_username}
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={'https://github.com/' + config.github_username}
+                style={{ color: 'white' }}
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <AiFillGithub />
               </a>
@@ -56,7 +56,7 @@ function Footer() {
         </Col>
       </Row>
     </Container>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
