@@ -4,13 +4,13 @@
  * @param props - This is the object that contains all the properties that are passed to the component.
  * @returns A function that returns a div with an id of preloader or preloader-none
  */
-import React from "react";
-function Pre(props) {
+import React from 'react'
+function Pre (props) {
   return (
     <div
-      id={props.load && props.load !== "done" ? "preloader" : "preloader-none"}
-    ></div>
-  );
+      id={props.load && props.load !== 'done' ? 'preloader' : 'preloader-none'}
+     />
+  )
 }
 
-export default Pre;
+export default Pre
