@@ -1,65 +1,65 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png";
-import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiFillRedEnvelope, AiOutlineVerticalAlignTop } from "react-icons/ai";
-import { SiReplit  } from "react-icons/si";
-import config from "../../config/config.json";
-import { BsFillEnvelopeFill } from "react-icons/bs";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import myImg from '../../Assets/avatar.png'
+import Tilt from 'react-parallax-tilt'
+import { AiFillGithub, AiFillRedEnvelope, AiOutlineVerticalAlignTop } from 'react-icons/ai'
+import { SiReplit } from 'react-icons/si'
+import config from '../../config/config.json'
+import { BsFillEnvelopeFill } from 'react-icons/bs'
 
-function Home2() {
+function Home2 () {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className='home-about-section' id='about'>
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple get-hacked"> INTRODUCE </span>{" "}
+          <Col md={8} className='home-about-description'>
+            <h1 style={{ fontSize: '2.6em' }}>
+              LET ME <span className='purple get-hacked'> INTRODUCE </span>{' '}
               MYSELF
             </h1>
-            <p className="home-about-body">
+            <p className='home-about-body'>
               I started programming during the Covid Pandemic in 2020.
               <br />
               <br />I am fluent in new like programming languages such as
               <i>
-                <b className="purple">
-                  {" "}
-                  CSS, HTML, Javascript and Typescript.{" "}
+                <b className='purple'>
+                  {' '}
+                  CSS, HTML, Javascript and Typescript.{' '}
                 </b>
               </i>
               <br />
               <br /> My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple get-hacked">
-                  Web Technologies and Products{" "}
-                </b>{" "}
-                and also in areas related to{" "}
-                <b className="purple get-hacked">
+                <b className='purple get-hacked'>
+                  Web Technologies and Products{' '}
+                </b>{' '}
+                and also in areas related to{' '}
+                <b className='purple get-hacked'>
                   Backend Services, CLI Services
                 </b>
               </i>
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="purple get-hacked">Node.js</b> and
+              with <b className='purple get-hacked'>Node.js</b> and
               <i>
-                <b className="purple get-hacked">
-                  {" "}
+                <b className='purple get-hacked'>
+                  {' '}
                   Modern Javascript Library and Frameworks
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple get-hacked"> React.js</b>
+                <b className='purple get-hacked'> React.js</b>
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvatar">
+          <Col md={4} className='myAvatar'>
             <Tilt>
               <img
                 src={myImg}
-                className="img-fluid"
-                alt="avatar"
+                className='img-fluid'
+                alt='avatar'
                 height={237}
                 width={217}
               />
@@ -67,42 +67,42 @@ function Home2() {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={12} className='home-about-social'>
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple get-hacked">connect </span>
+              Feel free to <span className='purple get-hacked'>connect </span>
               with me
             </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
+            <ul className='home-about-social-links'>
+              <li className='social-icons'>
                 <a
-                  href={"https://github.com/" + config.github_username}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  href={'https://github.com/' + config.github_username}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='icon-colour  home-social-icons'
                 >
-                  <AiFillGithub className="inline-block"/>
+                  <AiFillGithub className='inline-block' />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className='social-icons'>
                 <a
                   href={`https://replit.com/@NeonGamerBotQK`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  target='_blank'
+                  rel='noreferrer'
+                  className='icon-colour  home-social-icons'
                 >
-                  <SiReplit className="inline-block"/>
+                  <SiReplit className='inline-block' />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className='social-icons'>
                 <a
                   href={`mailto:neon@saahild.com`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  target='_blank'
+                  rel='noreferrer'
+                  className='icon-colour  home-social-icons'
                 >
-                  <BsFillEnvelopeFill className="inline-block"/>
-                </a>  
+                  <BsFillEnvelopeFill className='inline-block' />
+                </a>
               </li>
               {/* <li className="social-icons">
                 <a
@@ -139,6 +139,6 @@ function Home2() {
         </Row>
       </Container>
     </Container>
-  );
+  )
 }
-export default Home2;
+export default Home2
